@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  padding: 0 215px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex__jc_sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex__ai_c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e7e7e7;
+  border-bottom: 2px solid #dddddd;
+}
+
+nav .logo {
+  font-size: 53px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #4e4e4e;
+  padding: 48px 0 41px 0;
+}
+
+nav .links a {
+  font-size: 21px;
+  color: #4e4e4e;
+  text-transform: uppercase;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+nav .links a:not(:last-child) {
+  margin-right: 22px;
+}
+
+nav .links a:hover {
+  color: #1abb9c;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero .hero__img img {
+  width: 100%;
+}
+
+.hero .hero__text {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  right: 308px;
+  bottom: 200px;
+  text-align: center;
+}
+
+.hero .hero__text h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+  color: white;
+  padding-bottom: 45px;
+}
+
+.hero .hero__text h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 42px;
+  color: #a8a8a8;
+  padding-bottom: 50px;
+}
+
+.hero .hero__text a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  background: #3f8dbf;
+  padding: 17px 26px 14px 26px;
+  border-bottom: 4px solid #3678a3;
+  border-radius: 5px;
+}
+
+.card_padding {
+  padding: 60px 215px;
+}
+
+.cards .card {
+  max-height: 212px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cards .card .img__bg {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  left: 50%;
+  border-radius: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.cards .card .img__bg_pur {
+  background-color: #9d9abf;
+}
+
+.cards .card .img__bg_red {
+  background: #d2514b;
+}
+
+.cards .card .img__bg_blue {
+  background-color: #66a3c6;
+}
+
+.cards .card .img__bg_yel {
+  background-color: #e8c04f;
+}
+
+.cards .card .img__bg .card__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cards .card h1 {
+  margin: 29px 0 20px 0;
+  color: #4e4e4e;
+  font-size: 24px;
+}
+
+.cards .card p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #4e4e4e;
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 55px;
+}
+
+.olw .hr {
+  background-color: #dcdcdc;
+  height: 2px;
+  width: 100%;
+}
+
+.olw .heading {
+  font-size: 24px;
+  color: #4e4e4e;
+  margin: 60px 0 26px 0;
+  text-transform: uppercase;
+}
+
+.olw .works {
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 57px;
+}
+
+.olw .works .work {
+  width: 380px;
+}
+
+.olw .works .work h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #4e4e4e;
+  margin-top: 25px;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+.olw .works .work h2 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 17px;
+  color: #b3b3b3;
+  margin-top: 14px;
+}
+
+.olw .works .work p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #5c5c5c;
+  line-height: 37px;
+  margin-top: 25px;
+}
+
+.quote {
+  padding: 54px 0 62px 0;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.quote h1 {
+  font-size: 133px;
+  font-family: sans-serif;
+  color: #dcdcdc;
+}
+
+.quote p {
+  font-size: 26px;
+  line-height: 40px;
+  padding: 0 432px;
+  color: #b1b1b1;
+  margin-top: -33px;
+}
+
+.footer {
+  font-family: 'Roboto', sans-serif;
+  padding-top: 50px;
+  background-color: #1e1e1e;
+}
+
+.footer .copy {
+  padding: 0 215px 50px 215px;
+  color: #b1b1b1;
+}
+
+.footer__sec {
+  width: 300px;
+}
+
+.footer__sec > .git {
+  margin-bottom: 36px;
+}
+
+.footer__h {
+  color: #6c6c6c;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.footer__p {
+  color: #cacaca;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.footer__p span {
+  margin-left: 32px;
+}
+
+.footer__p img {
+  margin-right: 16px;
+}
+
+.footer__mbt {
+  margin-bottom: 34px;
+}
+
+.footer .line {
+  height: 2px;
+  background-color: #383838;
+  width: calc(100% - 430px);
+  margin: 50px auto;
+}
+/*# sourceMappingURL=main.css.map */
